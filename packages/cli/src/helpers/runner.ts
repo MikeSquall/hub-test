@@ -20,6 +20,7 @@ const exitIfPortBusy = (port: number) => {
 };
 
 export default (runnerOptions: { entryFile: string; port: number }) => {
+  console.info('-----------');
   console.info(messages.appIsPending);
 
   const { entryFile, port } = runnerOptions;
